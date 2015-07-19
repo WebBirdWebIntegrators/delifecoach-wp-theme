@@ -1,0 +1,48 @@
+{
+    "key": "group_547d823913626",
+    "title": "Gallery Settings",
+    "fields": [
+        {
+            "key": "field_547d824c85fb9",
+            "label": "Gallery Settings",
+            "name": "wb_547d824c85fb9",
+            "prefix": "",
+            "type": "gallery",
+            "instructions": "Please add your images",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "min": "",
+            "max": "",
+            "preview_size": "thumbnail",
+            "library": "all"
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "post"
+            }
+        ],
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "page"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "modified": 1424426039
+}

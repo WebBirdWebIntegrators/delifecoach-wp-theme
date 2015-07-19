@@ -1,0 +1,64 @@
+{
+    "key": "group_54f6c2c75132a",
+    "title": "Theme Settings \/ Footer Settings \/ Copyright Settings",
+    "fields": [
+        {
+            "key": "field_54f6c2dc37036",
+            "label": "Terms of Use",
+            "name": "wb_54f6c2dc37036",
+            "prefix": "",
+            "type": "page_link",
+            "instructions": "Select your page.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "post_type": [
+                "page"
+            ],
+            "taxonomy": "",
+            "allow_null": 0,
+            "multiple": 0
+        },
+        {
+            "key": "field_54f6c31d37037",
+            "label": "Disclaimer",
+            "name": "wb_54f6c2dc37036",
+            "prefix": "",
+            "type": "page_link",
+            "instructions": "Select your page.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "post_type": [
+                "page"
+            ],
+            "taxonomy": "",
+            "allow_null": 0,
+            "multiple": 0
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "acf-options-footer-settings"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "modified": 1425458012
+}

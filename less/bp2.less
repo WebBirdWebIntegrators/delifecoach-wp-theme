@@ -1,0 +1,86 @@
+#body {
+	
+	.b1 {
+		
+		.cntr {
+			
+			&.page {}
+			
+			&.category {
+				
+				.header {
+					background-color: tint(@color2,95%);
+					
+					.cntr {
+						padding: 0px;
+						
+						h1 {}
+					
+						.description {
+							font-size: 110%;
+							color: @color2;
+						}
+					}
+				}
+				
+				.lst {
+					padding: 30px;
+					
+					.post {
+						margin-bottom: 30px;
+						padding-bottom: 30px;
+						border-bottom: solid;
+						border-bottom-style: solid;
+						border-bottom-width: 1px;
+						border-bottom-color: tint(@color1,92.5%);
+						
+						.img {
+							margin-left: 45px;
+							margin-bottom: 15px;
+							float: right;
+							width: 40%;
+							height: auto;
+							
+							img {
+								.img1();
+							}
+						}
+						
+						.content {
+							padding: 0px;
+							width: 100%;
+							overflow: visible;
+							
+							h2 {
+								margin-top: 0px;
+								padding-top: 0px;
+								
+								a {
+									text-decoration: none;
+								}
+							}
+							
+							span {
+								
+								&.date {
+									margin: 0px;
+									padding: 0px;
+									float: left;
+									color: tint(@color1,50%);
+									line-height: inherit;
+									
+									&:after {
+										display: inline-block;
+										padding-left: 5px;
+										padding-right: 3px;
+										content: '-';
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,202 @@
+{
+    "key": "group_54e79fe069b33",
+    "title": "Plugin \/ Contacts",
+    "fields": [
+        {
+            "key": "field_54e8418dcebca",
+            "label": "",
+            "name": "_copy",
+            "prefix": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "<h2>Contact information<\/h2>"
+        },
+        {
+            "key": "field_54e7a7b8517e0",
+            "label": "E-mail",
+            "name": "wb_54e7a7b8517e0",
+            "prefix": "",
+            "type": "email",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "Enter E-mail",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_54e7a7d1517e1",
+            "label": "Phone Number",
+            "name": "wb_54e7a7d1517e1",
+            "prefix": "",
+            "type": "text",
+            "instructions": "Please enter the phone number in an international format (ex. +32 12 34 56 78).",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "Enter Phone Number",
+            "prepend": "",
+            "append": "",
+            "maxlength": "",
+            "readonly": 0,
+            "disabled": 0
+        },
+        {
+            "key": "field_54e84035ee5a7",
+            "label": "Mobile Phone",
+            "name": "wb_54e84035ee5a7",
+            "prefix": "",
+            "type": "text",
+            "instructions": "Please enter the mobile phone number in an international format (ex. +32 12 34 56 78).",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "Enter Mobile Phone",
+            "prepend": "",
+            "append": "",
+            "maxlength": "",
+            "readonly": 0,
+            "disabled": 0
+        },
+        {
+            "key": "field_54e8411d9f590",
+            "label": "",
+            "name": "",
+            "prefix": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "<h2>Social Media<\/h2>"
+        },
+        {
+            "key": "field_54e83f4f8e7fc",
+            "label": "LinkedIn",
+            "name": "wb_54e83f4f8e7fc",
+            "prefix": "",
+            "type": "url",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "Enter LinkedIn Url (use http:\/\/)"
+        },
+        {
+            "key": "field_54e7a823b5ef1",
+            "label": "Twitter",
+            "name": "wb_54e7a823b5ef1",
+            "prefix": "",
+            "type": "url",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "Enter Twitter Url (use http:\/\/)"
+        },
+        {
+            "key": "field_54e83f3b8e7fb",
+            "label": "Facebook",
+            "name": "wb_54e83f3b8e7fb",
+            "prefix": "",
+            "type": "url",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "Enter Facebook Url (use http:\/\/)"
+        },
+        {
+            "key": "field_54e83f8d8e7fd",
+            "label": "Instagram",
+            "name": "wb_54e83f8d8e7fd",
+            "prefix": "",
+            "type": "url",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "Enter Instagram Url (use http:\/\/)"
+        },
+        {
+            "key": "field_54e83fa18e7fe",
+            "label": "Pinterest",
+            "name": "wb_54e83fa18e7fe",
+            "prefix": "",
+            "type": "url",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "Enter Pinterest (use http:\/\/)"
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "contacts"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "modified": 1424592223
+}
