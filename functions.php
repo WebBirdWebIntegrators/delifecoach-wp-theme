@@ -35,6 +35,7 @@ update_option('large_size_h', 1200);
 
 add_image_size( 'medium-square', 600, 600, true );
 add_image_size( 'billboard-bp5', 2500, 9999 );
+add_image_size( 'circle', 450, 450, true );
 
 add_filter( 'image_size_names_choose', 'webbird_custom_image_sizes' );
 
@@ -43,6 +44,12 @@ function webbird_custom_image_sizes( $sizes ) {
 	    'medium-square' => __( 'Medium square', 'eagle' ),
         'billboard-bp5' => __( 'Billboard', 'eagle' ),
     ) );
+}
+
+add_action('init', 'load_exported_fields');
+
+function load_exported_fields(){
+	include 'acf/acf.php';
 }
 
 // Auto create menus

@@ -9,7 +9,7 @@ body {
 
 #header {
 	position: relative;
-	overflow: hidden;
+	//overflow: hidden;
 
 	&.light-transparant {
 		//height: 600px;
@@ -278,6 +278,70 @@ body {
 }
 
 #body {
+
+	.services {
+
+		.services__wrapper {
+			margin: 0 auto;
+			padding: 0;
+			padding-left: 5%;
+			padding-right: 5%;
+
+			ul {
+				display: table;
+				width: 100%;
+
+				li {
+					position: relative;
+					display: table-cell;
+					margin-right: 5%;
+					width: 30%;
+					padding: 0;
+					padding-top: 50px;
+					padding-bottom: 110px;
+					padding-left: 2.5%;
+					padding-right: 2.5%;
+					border-right: 1px solid fade(@white,10%);
+
+					&:first-of-type {
+						padding-left: 0;
+					}
+
+					&:last-of-type {
+						padding-right: 0;
+					}
+
+					.featured-image {
+						width: 200px;
+						height: 200px;
+						border: 6px solid fade(@white,50%);
+					}
+
+					a {
+
+						&.button {
+							position: absolute;
+							display: inline-block;
+							margin: 0;
+							padding-left: 0;
+							padding-right: 0;
+							left: 25%;
+							//right: 25%;
+							bottom: 50px;
+							width: 42.5%;
+							white-space: nowrap;
+							transition: .25s ease-in-out;
+							background-color: @white;
+
+							&:hover {
+								background-color: @color1;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
 
 	.b1 {
 
@@ -706,6 +770,16 @@ body {
 }
 
 #footer {
+
+	.webbird-quotes {
+
+		.webbird-quotes__wrapper {
+			margin: 0 auto;
+			width: 90%;
+			padding-left: 0;
+			padding-right: 0;
+		}
+	}
 
 	.fb1 {
 

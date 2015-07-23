@@ -34,8 +34,8 @@
 				    jQuery(function(){
 				      jQuery("#toggle-nav").click(function () {
 					  	jQuery("#toggle-nav").toggleClass("active");
-				        jQuery("#mnav").slideToggle("#mnav");
-				        jQuery("#fnav").slideToggle("#fnav");
+				        jQuery("#mnav-mobile").slideToggle("#mnav");
+				        jQuery("#fnav-mobile").slideToggle("#fnav");
 				      });
 				      jQuery("#toggle-contact").click(function () {
 					  	jQuery("#toggle-contact").toggleClass("active");
@@ -234,24 +234,8 @@
 		</div>
 	</div>
 
-	<?php if ( is_category() ) { ?>
-		<div class="hb2">
-			<div class="cntr">
-				<div class="pattern-overlay"></div>
-				<div class="billboard">
-					<ul>
-						<li>
-							<?php
-								foreach((get_the_category()) as $category) {
-									$category_image = fifc_the_tax_thumbnail($category->cat_ID ,'category','billboard-bp5');
-									echo $category_image;
-								}
-							?>
-						</li>
-					</ul>
-				</div>
-			</div>
-		</div>
+	<?php if ( is_category() || is_single() ) { ?>
+
 	<?php } elseif( is_archive() ) { ?>
 		<div class="hb2">
 			<div class="cntr">

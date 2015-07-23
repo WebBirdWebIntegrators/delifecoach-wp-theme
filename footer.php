@@ -1,6 +1,7 @@
 <div id="footer">
 
-	<!-- Gallery -->
+	<?php echo do_shortcode('[webbird-quotes]'); ?>
+
 	<?php get_template_part( 'assets/location-directions' ) ?>
 
 	<div class="fb1">
@@ -96,7 +97,7 @@
 						<?php if( get_field('field_545c927a920fc','option') ): ?>
 							<li>
 								<label>E:</label>
-								<a href="mailto:<?php the_field('field_545c927a920fc','option'); ?>" onclick="ga('send','event','contact','click','email',0);"><?php the_field('field_545c927a920fc','option'); ?></a>	
+								<a href="mailto:<?php the_field('field_545c927a920fc','option'); ?>" onclick="ga('send','event','contact','click','email',0);"><?php the_field('field_545c927a920fc','option'); ?></a>
 							</li>
 						<?php endif; ?>
 						<!-- End email -->

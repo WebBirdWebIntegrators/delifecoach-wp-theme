@@ -500,6 +500,58 @@
 #body {
 	overflow: hidden;
 
+	.services {
+		position: relative;
+		margin: 0;
+		padding: 0;
+		color: @white;
+		background-color: #80c39a;
+
+		.services__wrapper {
+			position: relative;
+			margin: 0;
+			padding: 0;
+
+			ul {
+				margin: 0;
+				padding: 0;
+				list-style: none;
+
+				li {
+					margin: 0;
+					padding: 30px;
+					list-style-type: none;
+					text-align: center;
+
+					.featured-image {
+						position: relative;
+						display: inline-block;
+						margin: 0 auto;
+						margin-bottom: 1em;
+						padding: 0;
+						border-radius: 50%;
+						width: 150px;
+						height: 150px;
+						border: 5px solid fade(@white,50%);
+					}
+
+					a {
+						text-decoration: none;
+
+						h2 {
+							color: @white;
+						}
+
+						&.button {
+							color: #80c39a;
+							background-color: @white;
+						}
+					}
+				}
+			}
+		}
+	}
+
 	.b1 {
 		overflow: hidden;
 		//background-color: tint(@color2,87.5%);
@@ -566,6 +618,10 @@
 				.content {
 					padding: 30px;
 					overflow: hidden;
+
+					.featured-image {
+						margin-bottom: 1.5em;
+					}
 
 					.tags {
 						overflow: hidden;
@@ -710,6 +766,26 @@
 
 #footer {
 	overflow: hidden;
+
+	.webbird-quotes {
+		color: @white;
+		background-color: @color2;
+
+		.webbird-quotes__wrapper {
+			background: none;
+		}
+
+		.webbird-quotes__link {
+
+			a.button {
+				background-color: @color1;
+			}
+		}
+
+		h3 {
+			color: inherit;;
+		}
+	}
 
 	.fb1 {
 		border-top-style: solid;

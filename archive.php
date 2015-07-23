@@ -13,9 +13,9 @@
 					<span>Tag</span><div class="divider">/</div><?php single_tag_title(); ?>
 				</h1>
 				<div class="description">
-					<?php 
+					<?php
 						$description = tag_description();
-						echo $description; 
+						echo $description;
 					?>
 				</div>
 			<?php } elseif( is_archive() ) { ?>
@@ -31,9 +31,9 @@
 					//echo $taxonomyTitle->labels->name;
 					echo '<div class="divider">/</div>';
 					echo $taxonomy->name;
-					echo '</h1>'; 
+					echo '</h1>';
 					echo '<div class="description">' . $taxonomy->description . '</div>';
-				?>		
+				?>
 			<?php } elseif (is_day()) { ?>
 				<h1>Archive for <?php the_time('F jS, Y'); ?></h1>
 			<?php } elseif (is_month()) { ?>
@@ -45,7 +45,7 @@
 			<?php } elseif (isset($_GET['paged']) && !empty($_GET['paged'])) { ?>
 				<h1>Blog Archives</h1>
 			<?php } ?>
-			
+
 		</div>
 	</div>
 	<div class="b2">
@@ -53,7 +53,7 @@
 			<div class="content with-sidebar">
 
 			<?php if (have_posts()) : ?>
-		
+
 				<?php while ( have_posts() ) : the_post(); ?>
 					<div <?php post_class( 'post' ) ?>>
 						<?php if ( has_post_thumbnail() ) : ?>
@@ -69,7 +69,7 @@
 									<?php the_post_thumbnail('medium-square'); ?>
 								</a>
 							</div>
-						<?php endif ?>	
+						<?php endif ?>
 						<div class="content">
 							<h2>
 								<a href="<?php the_permalink(); ?>" rel="bookmark" title="<?php the_title_attribute(); ?>">
@@ -89,9 +89,9 @@
 						</div>
 					</div>
 				<?php endwhile; ?>
-		
+
 			<?php else :
-		
+
 				if ( is_category() ) { // If this is a category archive
 					printf("<h2>Sorry, but there aren't any posts in the %s category yet.</h2>", single_cat_title('',false));
 				} else if ( is_date() ) { // If this is a date archive
@@ -102,47 +102,12 @@
 				} else {
 					echo("<h2>No posts found.</h2>");
 				}
-		
+
 			endif;
 		?>
 
 		</div>
 			<div class="sidebar">
-				<?php if ( is_tag() ) { ?>
-					
-				<?php } else { ?>
-					<?php if ( ! get_post_type( array('page', 'attachment', 'post') ) ) { ?>
-						<div class="sidebar-default taxonomy-terms">
-							Oeps ...
-							<p><strong>Remark:</strong> For the moment we can't seem to get the taxonomy names / labels.</p>
-							<?php
-								$customPostType = get_post_type();
-								$customPostTaxonomies = get_object_taxonomies($customPostType);
-								if(count($customPostTaxonomies) > 0) {
-									foreach($customPostTaxonomies as $tax) {
-										$args = array(
-							         	  'orderby' => 'name',
-								          'show_count' => 0,
-							        	  'pad_counts' => 0,
-								          'hierarchical' => 1,
-							        	  'title_li' => '',
-							        	  'current_category' => 1,
-							        	  'taxonomy' => $tax,
-							        	);
-										
-										echo '<h2>';
-											$taxonomyTitle = get_taxonomy( get_query_var( 'taxonomy' ) );
-											echo $taxonomyTitle->labels->name;
-										echo '</h2>';
-										echo '<ul>';
-											wp_list_categories( $args );
-										echo '</ul>';
-										}
-								}
-							?>
-						</div>
-					<?php } ?>
-				<?php } ?>
 				<?php dynamic_sidebar( 'sidebar1' ); ?>
 			</div>
 		</div>
