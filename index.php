@@ -3,49 +3,7 @@
 <div id="body">
 	<div class="b1">
 		<div class="cntr">
-			<?php $post = $posts[0]; // Hack. Set $post so that the_date() works. ?>
-			<?php if (is_category()) { ?>
-				<h1>Archive for the '<?php single_cat_title(); ?>' Category</h1>
-			<?php } elseif( is_post_type_archive() ) { ?>
-				<h1><?php post_type_archive_title(); ?></h1>
-			<?php } elseif( is_tag() ) { ?>
-				<h1>
-					<span>Tag</span><div class="divider">/</div><?php single_tag_title(); ?>
-				</h1>
-				<div class="description">
-					<?php
-						$description = tag_description();
-						echo $description;
-					?>
-				</div>
-			<?php } elseif( is_archive() ) { ?>
-				<?php
-					$customPostType = get_post_type();
-					$postTypeObject = get_post_type_object( $customPostType );
-					$taxonomyTitle = get_taxonomy( get_query_var( 'taxonomy' ) );
-					$taxonomy = $wp_query->get_queried_object();
-					echo '<h1>';
-					echo '<span>';
-					echo $postTypeObject->labels->singular_name;
-					echo '</span>';
-					//echo $taxonomyTitle->labels->name;
-					echo '<div class="divider">/</div>';
-					echo $taxonomy->name;
-					echo '</h1>';
-					echo '<div class="description">' . $taxonomy->description . '</div>';
-				?>
-			<?php } elseif (is_day()) { ?>
-				<h1>Archive for <?php the_time('F jS, Y'); ?></h1>
-			<?php } elseif (is_month()) { ?>
-				<h1>Archive for <?php the_time('F, Y'); ?></h1>
-			<?php  } elseif (is_year()) { ?>
-				<h1>Archive for <?php the_time('Y'); ?></h1>
-			<?php } elseif (is_author()) { ?>
-				<h1>Author Archive</h1>
-			<?php } elseif (isset($_GET['paged']) && !empty($_GET['paged'])) { ?>
-				<h1>Blog Archives</h1>
-			<?php } ?>
-
+			<h1>Blog</h1>
 		</div>
 	</div>
 	<div class="b2">
@@ -80,6 +38,7 @@
 								<?php the_time('l d F Y') ?> / <?php the_author_posts_link(); ?>
 							</div>
 							<?php the_excerpt() ?>
+							<a href="<?php the_permalink(); ?>" class="button" style="margin-top: 1em">Lees meer</a>
 							<?php the_tags('<div class="tags"><span>' . __('Tags', 'eagle') . ': </span>', ', ', '</div>'); ?>
 							<!--
 <a href="<?php the_permalink(); ?>" rel="bookmark" title="<?php the_title_attribute(); ?>" class="read-more">

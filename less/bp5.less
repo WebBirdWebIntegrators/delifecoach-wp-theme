@@ -294,7 +294,7 @@ body {
 				li {
 					position: relative;
 					display: table-cell;
-					margin-right: 5%;
+					//margin-right: 5%;
 					width: 30%;
 					padding: 0;
 					padding-top: 50px;
@@ -305,10 +305,34 @@ body {
 
 					&:first-of-type {
 						padding-left: 0;
+
+						.button-wrapper {
+							position: absolute;
+							margin: auto;
+							left: 0;
+							right: 10%;
+							padding-left: 0;
+							padding-right: 0;
+							bottom: 50px;
+							text-align: center;
+							box-sizing: padding-box;
+						}
 					}
 
 					&:last-of-type {
 						padding-right: 0;
+
+						.button-wrapper {
+							position: absolute;
+							margin: auto;
+							left: 10%;
+							right: 0;
+							padding-left: 0;
+							padding-right: 0;
+							bottom: 50px;
+							text-align: center;
+							box-sizing: padding-box;
+						}
 					}
 
 					.featured-image {
@@ -317,21 +341,26 @@ body {
 						border: 6px solid fade(@white,50%);
 					}
 
+					.button-wrapper {
+						position: absolute;
+						margin: auto;
+						left: 5%;
+						right: 5%;
+						padding-left: 0;
+						padding-right: 0;
+						bottom: 50px;
+						text-align: center;
+						box-sizing: padding-box;
+					}
+
 					a {
 
 						&.button {
-							position: absolute;
-							display: inline-block;
-							margin: 0;
-							padding-left: 0;
-							padding-right: 0;
-							left: 25%;
-							//right: 25%;
-							bottom: 50px;
-							width: 42.5%;
 							white-space: nowrap;
 							transition: .25s ease-in-out;
 							background-color: @white;
+							border-radius: 3px;
+							min-width: 50%;
 
 							&:hover {
 								background-color: @color1;

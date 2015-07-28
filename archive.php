@@ -80,6 +80,7 @@
 								<?php the_time('l d F Y') ?> / <?php the_author_posts_link(); ?>
 							</div>
 							<?php the_excerpt() ?>
+							<a href="<?php the_permalink(); ?>" class="button" style="margin-top: 1em">Lees meer</a>
 							<?php the_tags('<div class="tags"><span>' . __('Tags', 'eagle') . ': </span>', ', ', '</div>'); ?>
 							<!--
 <a href="<?php the_permalink(); ?>" rel="bookmark" title="<?php the_title_attribute(); ?>" class="read-more">

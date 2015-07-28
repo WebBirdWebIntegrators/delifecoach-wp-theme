@@ -3062,7 +3062,6 @@ iframe {
   #body .services .services__wrapper ul li {
     position: relative;
     display: table-cell;
-    margin-right: 5%;
     width: 30%;
     padding: 0;
     padding-top: 50px;
@@ -3074,26 +3073,53 @@ iframe {
   #body .services .services__wrapper ul li:first-of-type {
     padding-left: 0;
   }
+  #body .services .services__wrapper ul li:first-of-type .button-wrapper {
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 10%;
+    padding-left: 0;
+    padding-right: 0;
+    bottom: 50px;
+    text-align: center;
+    box-sizing: padding-box;
+  }
   #body .services .services__wrapper ul li:last-of-type {
     padding-right: 0;
+  }
+  #body .services .services__wrapper ul li:last-of-type .button-wrapper {
+    position: absolute;
+    margin: auto;
+    left: 10%;
+    right: 0;
+    padding-left: 0;
+    padding-right: 0;
+    bottom: 50px;
+    text-align: center;
+    box-sizing: padding-box;
   }
   #body .services .services__wrapper ul li .featured-image {
     width: 200px;
     height: 200px;
     border: 6px solid rgba(255, 255, 255, 0.5);
   }
-  #body .services .services__wrapper ul li a.button {
+  #body .services .services__wrapper ul li .button-wrapper {
     position: absolute;
-    display: inline-block;
-    margin: 0;
+    margin: auto;
+    left: 5%;
+    right: 5%;
     padding-left: 0;
     padding-right: 0;
-    left: 25%;
     bottom: 50px;
-    width: 42.5%;
+    text-align: center;
+    box-sizing: padding-box;
+  }
+  #body .services .services__wrapper ul li a.button {
     white-space: nowrap;
     transition: 0.25s ease-in-out;
     background-color: #ffffff;
+    border-radius: 3px;
+    min-width: 50%;
   }
   #body .services .services__wrapper ul li a.button:hover {
     background-color: #464646;

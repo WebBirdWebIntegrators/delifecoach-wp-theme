@@ -236,6 +236,8 @@
 
 	<?php if ( is_category() || is_single() ) { ?>
 
+		<?php } elseif(is_home()) { ?>
+
 	<?php } elseif( is_archive() ) { ?>
 		<div class="hb2">
 			<div class="cntr">

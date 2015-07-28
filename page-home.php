@@ -10,42 +10,48 @@
 			<ul>
 				<li>
 					<?php echo get_the_post_thumbnail( '29', 'circle', array('class' => 'featured-image') ); ?>
-					<a href="<?php the_permalink(); ?>"><h2><?php echo get_field('services__title1'); ?></h2></a>
+					<a href="<?php echo get_permalink('29'); ?>"><h2><?php echo get_field('services__title1'); ?></h2></a>
 					<?php
 					$id = 29;
 					$post = get_post( $id );
 					setup_postdata( $post );
 					?>
 					<?php the_excerpt(); ?>
-					<a href="<?php the_permalink(); ?>" class="button">Meer info</a>
+					<div class="button-wrapper">
+						<a href="<?php the_permalink(); ?>" class="button">Meer info</a>
+					</div>
 					<?php
 					wp_reset_postdata();
 					?>
 				</li>
 				<li>
 					<?php echo get_the_post_thumbnail( '31', 'circle', array('class' => 'featured-image') ); ?>
-					<a href="<?php the_permalink(); ?>"><h2><?php echo get_field('services__title2'); ?></h2></a>
+					<a href="<?php echo get_permalink('31'); ?>"><h2><?php echo get_field('services__title2'); ?></h2></a>
 					<?php
 					$id = 31;
 					$post = get_post( $id );
 					setup_postdata( $post );
 					?>
 					<?php the_excerpt(); ?>
-					<a href="<?php the_permalink(); ?>" class="button">Meer info</a>
+					<div class="button-wrapper">
+						<a href="<?php the_permalink(); ?>" class="button">Meer info</a>
+					</div>
 					<?php
 					wp_reset_postdata();
 					?>
 				</li>
 				<li>
 					<?php echo get_the_post_thumbnail( '33', 'circle', array('class' => 'featured-image') ); ?>
-					<a href="<?php the_permalink(); ?>"><h2><?php echo get_field('services__title3'); ?></h2></a>
+					<a href="<?php echo get_permalink('33'); ?>"><h2><?php echo get_field('services__title3'); ?></h2></a>
 					<?php
 					$id = 33;
 					$post = get_post( $id );
 					setup_postdata( $post );
 					?>
 					<?php the_excerpt(); ?>
-					<a href="<?php the_permalink(); ?>" class="button">Meer info</a>
+					<div class="button-wrapper">
+						<a href="<?php the_permalink(); ?>" class="button">Meer info</a>
+					</div>
 					<?php
 					wp_reset_postdata();
 					?>
