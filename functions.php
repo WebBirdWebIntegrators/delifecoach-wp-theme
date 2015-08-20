@@ -253,4 +253,22 @@ add_filter('acf/settings/load_json', function($paths) {
 	return $paths;
 });
 
+function webbird_add_excerpts_to_pages() {
+     add_post_type_support( 'page', 'excerpt' );
+}
+
+add_action( 'init', 'webbird_add_excerpts_to_pages' );
+
+function webbird_add_favicon_to_wp_head() {
+
+	$output = '<!-- Favicon -->';
+	$output .= '<link rel="shortcut icon" href="' . get_stylesheet_directory_uri() . '/img/favicon.ico" type="image/x-icon">';
+	$output .= '<link rel="icon" href="' . get_stylesheet_directory_uri() . '/img/favicon.ico" type="image/x-icon">';
+	echo $output;
+}
+
+
+add_action('wp_head','webbird_add_favicon_to_wp_head');
+
+
 ?>
